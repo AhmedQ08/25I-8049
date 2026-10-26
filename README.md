@@ -107,18 +107,39 @@ Suppose the `sci.med` posts represent patient adverse-event reports in a regulat
 
 ---
 
-## Submission & Grading Rubric
+## 📤 Submission Instructions
 
-Commit your completed `lab15_starter.py` and `ANSWERS.md` and push to your repository branch:
-```bash
-git add lab15_starter.py ANSWERS.md
-git commit -m "Complete Lab 15 TF-IDF pipeline and problem-solving analysis"
+This activity uses GitHub Classroom and Automated Grading. Your progress and solutions will be submitted automatically through Git.
+
+Step 1: Accept the Assignment Invitation
+Click the GitHub Classroom assignment link provided by your instructor to generate your own private student repository (e.g., data-science-lab15-yourusername).
+Clone your newly created repository to your local machine or open it directly in VS Code / GitHub Codespaces.
+
+Step 2: Complete the Programming & Problem-Solving Tasks
+
+Open lab15_starter.py in your code editor.
+Fill in the missing code blocks for Text Cleaning & Normalization, Bag-of-Words vs. TF-IDF Extraction, and K-Means Clustering as outlined in the script comments.
+Write your short answers for the Problem-Solving Questions as comments or within a markdown summary.
+
+Step 3: Test Your Code Locally (Recommended)
+
+Before submitting, run the test suite on your own machine to ensure all checks pass:
+
+# Install dependencies
+pip install -r requirements.txt
+pip install pytest
+
+# Run the test suite
+pytest test_lab15.py
+
+Step 4: Submit via Git Push
+
+Once you have completed the lab and verified your code works, commit and push your changes to your remote repository:
+git add lab15_starter.py
+git commit -m "Complete Lab 15 TF-IDF and K-Means clustering pipeline"
 git push origin main
-```
 
-| Criterion | Deliverable | Weight |
-| :--- | :--- | :--- |
-| **1. Preprocessing Pipeline** | Accurate tokenization, stopword removal, and stemming vs. lemmatization comparison. | **25%** |
-| **2. Vectorization & Viz** | Valid BoW/TF-IDF matrices, sparsity metric, and saved top-features bar chart. | **25%** |
-| **3. Unsupervised Clustering** | Working 4-cluster K-Means model, centroid heatmap, and 2D spatial scatter plot. | **25%** |
-| **4. Diagnostic Problem Solving** | Noise refinement, crosstab overlap diagnosis, norm comparison, and `explain_document` audit in `ANSWERS.md`. | **25%** |
+Step 5: Verify Your Automated Grade
+
+Go to your repository page on GitHub.Click on the Actions tab at the top.
+Check the latest workflow run. If your code passes all pytest checks, a green checkmark ($\checkmark$) will appear, indicating your assignment has been successfully evaluated and submitted!
